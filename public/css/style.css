@@ -1,0 +1,21 @@
+/*This CSS page gives the general style to all the html pages*/
+header, footer{
+    background-color: #092F20;
+}
+
+footer{
+    height: 70px;
+
+}
+
+body{
+    background-color: #6B9E8A;
+}
+
+table{
+    background-color: white;
+}
+
+.logo-img{
+    width: 200px;
+}

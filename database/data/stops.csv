@@ -1,0 +1,18 @@
+day;location;time;occasion;length
+Sunday;Kamperland;10:00;;
+Sunday;Mouscron, Belgium;11:45;Gas the truck;
+Sunday;Paris;;Change of driver;
+Sunday;Tankstation;;Change of driver;
+Sunday;Area Porte de Corréze, Masseret;;Change of driver;
+Sunday;Tulle;21:30;Sleeping, they stop the truck right in front of the first customer;
+Monday;Tulle;06:00;Starting with first customer;
+Monday;;;Going to all customers;
+Monday;Montauban;19:30;Done with all customers and sleep;
+Tuesday;Montauban;07:00;Start the day;
+Tuesday;;07:30;First customer;
+Tuesday;;;Going to all customers;
+Tuesday;air de la croix de mille;19:00;Done with all customers and sleep;
+Wednesday;air de la croix de mille;08:00;Start the day and going to first customer;
+Wednesday;laatste klant;14:00;Done with last customers;
+Wednesday;;;Way back;
+Wednesday;Kamperland;00:00 / 00:30;Back home;

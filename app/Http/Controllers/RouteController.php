@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Route;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class RouteController extends Controller
 {
@@ -20,6 +21,10 @@ class RouteController extends Controller
      */
     public function index()
     {
+        if (Auth::user()->role !== 'admin') {
+            abort(403);
+        }
+
         $routes = Route::simplePaginate(25);
         return view('routes.index', compact('routes'));
     }

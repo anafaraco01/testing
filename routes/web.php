@@ -60,7 +60,7 @@ Route::match(['get', 'post'], '/profile/username', [App\Http\Controllers\Profile
 Route::match(['get', 'post'], '/profile/email', [App\Http\Controllers\ProfileController::class, 'changeEmail'])->name('email');
 
 // Admin Controllers
-Route::resource('/routes', RouteController::class);
+Route::middleware(['web', 'role:admin'])->get('/routes', [RouteController::class, 'index']);
 Route::resource('/users', UserController::class);
 
 

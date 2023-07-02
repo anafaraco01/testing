@@ -15,14 +15,9 @@ class CheckRole
      */
     public function handle($request, Closure $next)
     {
-        if ($request->user()) {
-            if ($request->user()->password_changed != 1) {
-                return redirect(route('password.change', $request->user()->id));
-            }
-            if ($request->user()->role == 'admin') {
-                return $next($request);
-            }
+        if ($request->user()->role !== 'admin' ) {
+                abort(403);
         }
-        abort(403);
+        return $next($request);
     }
 }
